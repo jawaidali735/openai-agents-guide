@@ -26,7 +26,7 @@ openai-agents-guide/
 ### 📘 Full Setup Guide
 > A complete walkthrough of setting up the project, installing dependencies, and writing your first agent.
 
-🔗 [Read Full Setup Guide](docs/README.md)
+🔗 [Read all notes,steps and guides here](docs%2C%20steps%2C%20guides/README.md)
 
 ---
 
