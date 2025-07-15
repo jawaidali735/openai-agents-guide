@@ -1,57 +1,99 @@
-Yeh README file aapko samjhayegi ke kaise Runner.run_streamed() aur stream_events() ka istemal karte hain real-time token streaming ke liye — jaise ChatGPT responses appear karte hain.
+# 🤖 Chainlit + OpenAI Agents SDK Streaming Response Explained (Urdu)
 
-🧩 Highlighted Code Block
-python
-Copy
-Edit
+Yeh file explain karti hai ke kaise streaming response work karta hai Chainlit + OpenAI Agents SDK ke through. Special focus hai `stream_events()` aur `ResponseTextDeltaEvent` par — jahan token-by-token real-time response stream hota hai.
+
+---
+
+## 🔁 Core Streaming Code
+
+```python
 async for event in result.stream_events():
     if event.type == "raw_response_event" and isinstance(event.data, ResponseTextDeltaEvent):
         await msg.stream_token(event.data.delta)
-🎯 Pehle Context Samjho
-Runner.run_streamed() ek streaming process start karta hai jisme agent ka response token-by-token milta hai — bilkul ChatGPT jaisa experience.
+```
 
-stream_events() ek async generator hai jo AI model se har naye token ka event real-time mein bhejta hai.
+### 📜 Urdu Explanation:
 
-🧠 Line-by-Line Breakdown
-🔹 async for event in result.stream_events():
-python
-Copy
-Edit
+**Line 1**  
+```python
 async for event in result.stream_events():
-Yeh ek asynchronous loop hai jo har naye token ke event ko await karke receive karta hai.
+```
+🟢 *"Jab tak AI ka jawaab aa raha hai, har naye event ko real-time mein suno (listen karo)."*
 
-🔹 if event.type == "raw_response_event":
-python
-Copy
-Edit
-if event.type == "raw_response_event":
-Har event ka ek type hota hai. Yeh check karta hai ke kya event ka type raw_response_event hai — yani ke actual token ka event aya hai.
+- `stream_events()` ek async generator hai.
+- Har naye token ya signal ko ek `event` object ki form mein return karta hai.
 
-🔹 isinstance(event.data, ResponseTextDeltaEvent)
-python
-Copy
-Edit
-isinstance(event.data, ResponseTextDeltaEvent)
-Yeh check karta hai ke event.data ka type ResponseTextDeltaEvent hai ya nahi — jo streamed token ko represent karta hai.
+---
 
-🔹 await msg.stream_token(event.data.delta)
-python
-Copy
-Edit
+**Line 2**  
+```python
+if event.type == "raw_response_event" and isinstance(event.data, ResponseTextDeltaEvent):
+```
+🟡 *"Agar event ka type `raw_response_event` hai aur woh text response (delta) ka hissa hai, tab hi aage process karo."*
+
+- `raw_response_event`: Matlab naya raw token mila hai.
+- `ResponseTextDeltaEvent`: Sirf wahi event accept karo jo text token ho (image ya function call nahi).
+
+---
+
+**Line 3**  
+```python
 await msg.stream_token(event.data.delta)
-event.data.delta mein ek naya word/token hota hai. msg.stream_token() use user interface (chat bubble) mein real-time show karta hai.
+```
+🔵 *"Is naye token ko turant user ke chat UI mein show karo (jaise typing hoti hai)."*
 
-💬 Visual Flow:
-text
-Copy
-Edit
-User ➜ Message ➜ Agent ➜ Streaming Response ➜ Token ➜ Shown in UI
-📜 Urdu mein Samajh Lo:
-"Jab tak AI ka jawaab aa raha hai, har naye word/token ke liye dekho. Agar event ka type raw_response_event hai aur woh ek ResponseTextDeltaEvent hai, to us token ko foran user ko screen par dikhao — jaise ke type ho raha ho."
+- `event.data.delta`: Naya text token.
+- `msg.stream_token(...)`: Is token ko live stream karke UI par display karta hai.
 
-🧾 Summary Table
-Part	Explanation
-async for event in result.stream_events()	Token stream ko async loop mein read karta hai
-event.type == "raw_response_event"	Check karta hai ke event actual token hai
-ResponseTextDeltaEvent	Streamed token ka structure hota hai
-msg.stream_token(...)	Token ko UI par type hota hua show karta hai
+---
+
+## 🎯 Overall Flow Summary
+
+| Part | Explanation |
+|------|-------------|
+| `async for event in ...` | Live event listener for streamed AI response |
+| `event.type == "raw_response_event"` | Check kar raha hai ke naya response token aya hai |
+| `isinstance(..., ResponseTextDeltaEvent)` | Confirm kar raha hai ke woh event ek text token hai |
+| `await msg.stream_token(...)` | Naya token user ko live UI mein dikhaya jata hai |
+
+---
+
+## 💬 Visual Example Flow
+
+1. User ne sawal bheja
+2. Agent ne jawaab generate karna shuru kiya (streaming mode mein)
+3. Har token event ke through aaya
+4. Har token real-time mein chat bubble mein appear hua (typing jaisa effect)
+
+---
+
+## ✅ Urdu Summary (1-Line)
+
+*"Jab AI se response aata hai, har naye word/token ko detect karo aur user ke samne real-time mein display karo."*
+
+---
+
+## 📁 Usage
+
+Agar aap Chainlit app bana rahe ho jo streaming support karta hai, toh upar wala block aapke message streaming logic ka essential part hoga.
+
+---
+
+## 📎 Dependencies
+
+Ensure your environment includes:
+
+- `chainlit`
+- `openai` or `litellm`
+- `chainlit/agent-sdk` with support for `ResponseTextDeltaEvent`
+
+---
+
+## 📦 Save this README
+
+Aap is file ko `README.md` ke naam se save kar sakte hain aur GitHub ya kisi bhi documentation mein use kar sakte hain.
+
+```bash
+touch README.md
+# Paste this content in your file
+```
