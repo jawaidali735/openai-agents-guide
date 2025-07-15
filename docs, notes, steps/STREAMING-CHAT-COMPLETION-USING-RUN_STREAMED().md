@@ -1,5 +1,6 @@
-Streaming Chat Completion using run_streamed()
-🔁 Yeh Part:
+Yeh README file aapko samjhayegi ke kaise Runner.run_streamed() aur stream_events() ka istemal karte hain real-time token streaming ke liye — jaise ChatGPT responses appear karte hain.
+
+🧩 Highlighted Code Block
 python
 Copy
 Edit
@@ -7,55 +8,50 @@ async for event in result.stream_events():
     if event.type == "raw_response_event" and isinstance(event.data, ResponseTextDeltaEvent):
         await msg.stream_token(event.data.delta)
 🎯 Pehle Context Samjho
-Runner.run_streamed() ek streaming process start karta hai jisme agent ka response thoda thoda karke (token by token) milta hai — jaise ChatGPT web mein typing dikhai deti hai.
+Runner.run_streamed() ek streaming process start karta hai jisme agent ka response token-by-token milta hai — bilkul ChatGPT jaisa experience.
 
-Ye response ek stream_events() naam ka async generator deta hai jo har event deta hai jab bhi kuch new token ya data mile.
+stream_events() ek async generator hai jo AI model se har naye token ka event real-time mein bhejta hai.
 
-🧠 Breakdown:
-🔸 async for event in result.stream_events():
-Yeh ek asynchronous loop hai jo real-time mein har response token ka event receive karta hai.
-
-Har event mein kuch information hoti hai (jaise naya token aaya, ya response complete hua, etc.)
-
-🔸 if event.type == "raw_response_event"
-Har event ka ek type hota hai.
-
-raw_response_event ka matlab hai ke AI model ka raw (original) token/part of answer aaya hai.
-
-🔸 isinstance(event.data, ResponseTextDeltaEvent)
-Yeh check karta hai ke event.data ka type hai ResponseTextDeltaEvent ya nahi.
-
-ResponseTextDeltaEvent ek special class hoti hai jo streamed text token ko represent karti hai.
-
-Iska use tab hota hai jab response real-time mein slowly arrive kar raha ho.
-
-🔸 await msg.stream_token(event.data.delta)
-event.data.delta mein ek naya token/text character hota hai jo abhi model ne bheja.
-
-msg.stream_token() us nayi line/word/token ko user UI mein live show karta hai (jaise chat bubbles type hoti hain).
-
-💬 Visual Flow:
-Aap user ka message bhejte ho
-
-Agent response generate karta hai streamed mode mein
-
-Har token event ke form mein aata hai (type: raw_response_event)
-
-Har naya token screen par type hota hua dikhai deta hai
-
-✅ Poora Block Samjho in Easy Urdu:
+🧠 Line-by-Line Breakdown
+🔹 async for event in result.stream_events():
 python
 Copy
 Edit
 async for event in result.stream_events():
-    if event.type == "raw_response_event" and isinstance(event.data, ResponseTextDeltaEvent):
-        await msg.stream_token(event.data.delta)
-📜 Urdu mein matlab:
-"Jab tak AI ka jawaab aa raha hai, har naye word/token ke liye dekho. Agar event ka type 'raw_response_event' hai aur woh ek text-type response hai, to us token ko turant user ke samne display karo (jaise type ho raha ho)."
+Yeh ek asynchronous loop hai jo har naye token ke event ko await karke receive karta hai.
 
-🔚 Summary (Samjhne ke Liye):
+🔹 if event.type == "raw_response_event":
+python
+Copy
+Edit
+if event.type == "raw_response_event":
+Har event ka ek type hota hai. Yeh check karta hai ke kya event ka type raw_response_event hai — yani ke actual token ka event aya hai.
+
+🔹 isinstance(event.data, ResponseTextDeltaEvent)
+python
+Copy
+Edit
+isinstance(event.data, ResponseTextDeltaEvent)
+Yeh check karta hai ke event.data ka type ResponseTextDeltaEvent hai ya nahi — jo streamed token ko represent karta hai.
+
+🔹 await msg.stream_token(event.data.delta)
+python
+Copy
+Edit
+await msg.stream_token(event.data.delta)
+event.data.delta mein ek naya word/token hota hai. msg.stream_token() use user interface (chat bubble) mein real-time show karta hai.
+
+💬 Visual Flow:
+text
+Copy
+Edit
+User ➜ Message ➜ Agent ➜ Streaming Response ➜ Token ➜ Shown in UI
+📜 Urdu mein Samajh Lo:
+"Jab tak AI ka jawaab aa raha hai, har naye word/token ke liye dekho. Agar event ka type raw_response_event hai aur woh ek ResponseTextDeltaEvent hai, to us token ko foran user ko screen par dikhao — jaise ke type ho raha ho."
+
+🧾 Summary Table
 Part	Explanation
-async for event in ...	Live event listener for streamed AI response
-event.type == "raw_response_event"	Check kar raha hai ke naya response token aya hai
-isinstance(..., ResponseTextDeltaEvent)	Check kar raha hai ke woh event text token hai ya nahi
-await msg.stream_token(...)	Naya token chat UI mein live stream (type hota hua) dikhana
+async for event in result.stream_events()	Token stream ko async loop mein read karta hai
+event.type == "raw_response_event"	Check karta hai ke event actual token hai
+ResponseTextDeltaEvent	Streamed token ka structure hota hai
+msg.stream_token(...)	Token ko UI par type hota hua show karta hai
