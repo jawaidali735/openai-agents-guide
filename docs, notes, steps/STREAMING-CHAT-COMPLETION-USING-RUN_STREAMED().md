@@ -89,11 +89,3 @@ Ensure your environment includes:
 
 ---
 
-## 📦 Save this README
-
-Aap is file ko `README.md` ke naam se save kar sakte hain aur GitHub ya kisi bhi documentation mein use kar sakte hain.
-
-```bash
-touch README.md
-# Paste this content in your file
-```
