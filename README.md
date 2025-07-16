@@ -17,6 +17,8 @@ This repository is structured for easy navigation, so you can quickly find what 
 
 🔗 [How to make agents](docs%2C%20notes%2C%20steps/HOW-TO-MAKE-AGENTS.md)
 
+🔗 [How to make agents](docs%2C%20notes%2C%20steps/CODE-UNDERSTANDING-OF-STREAMING-AND-CHAINLIT.md)
+
 ---
 
 ## 📎 External Resources
@@ -28,3 +30,9 @@ This repository is structured for easy navigation, so you can quickly find what 
 
 Happy Learning! 🚀  
 Feel free to fork and contribute!
+
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=6A5ACD&center=true&vCenter=true&lines=Documented+by+Jawaid+Ali;Thanks+for+Reading!" />
+</p>
+
