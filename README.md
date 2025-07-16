@@ -17,7 +17,7 @@ This repository is structured for easy navigation, so you can quickly find what 
 
 🔗 [How to make agents](docs%2C%20notes%2C%20steps/HOW-TO-MAKE-AGENTS.md)
 
-🔗 [How to make agents](docs%2C%20notes%2C%20steps/CODE-UNDERSTANDING-OF-STREAMING-AND-CHAINLIT.md)
+🔗 [Code understanding of streaming and chainlit](docs%2C%20notes%2C%20steps/CODE-UNDERSTANDING-OF-STREAMING-AND-CHAINLIT.md)
 
 ---
 
