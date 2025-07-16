@@ -145,7 +145,7 @@ Yeh OpenAI ya Gemini SDK ka standard format hai —
 jahan AI model pura thread ko sequentially padhta hai, aur last user message ke hisaab se reply karta hai.
 
 
-#3# 🔹 2. AI ka internal behavior:
+### 🔹 2. AI ka internal behavior:
 AI ko jab aap input = history dete ho, toh:
 - Woh history mein se last user message uthata hai (last {"role": "user", ...} item)
 - Aur uske saath saath poori history se context build karta hai
@@ -162,6 +162,8 @@ input = [{"role": "user", "content": message.content}]
 ```
 Par isse conversation context lose ho jata hai.
 
+---
+
 ## 💡 Bonus Tip:
 
 
@@ -170,12 +172,14 @@ Agar aap debug karna chahein ke agent ko kya mil raha hai, toh:
 ```python
 print(history)
 ```
+
 Ya Chainlit UI mein dekhna ho:
+
 ```python
 await cl.Message(content=str(history)).send()
 ```
 
-
+---
 ## ✅ Conclusion:
 |🔹 Point |🔸 Explanation |
 |--------|-------------|
@@ -183,6 +187,8 @@ await cl.Message(content=str(history)).send()
 | Recent message | history list ka last user message hota hai|
 | Smart response | AI puri thread samajh kar jawab deta hai
 
+
+---
 
 # Input = \[{"role": "user", "content": message.content}\] ye yeni chat main user jo puchta hai wo yeha se puchega wo sabse phele jaega chainlit ke user session main save hoga aur phir hum history pass karenge agent ke input ko aur wo dekhga ke history main last message konsa hain?
 
@@ -212,6 +218,7 @@ yeh karta hai:
 - Phir hum yeh poori history AI ko dete hain taake usko pehle kya kya baat hui wo yaad rahe.
 
 
+---
 ## 🤖 Phir agent ko yeh diya jaata hai:
 
 ```python
@@ -223,6 +230,7 @@ result = await Runner.run(
 ```
 Yeh history AI ko poora conversation context deta hai.
 > ✳️ AI usme se sabse aakhri user message ko padhta hai (since latest input sabse last pe hota hai), aur pehle ka context bhi samajh jaata hai.
+
 
 ## 🔁 Assistant response ke baad:
 
