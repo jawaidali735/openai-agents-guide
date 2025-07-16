@@ -11,6 +11,15 @@ Chainlit ke session mein ek khaali list save karti hai "history" key ke andar.
 
 **Matlab:** Har naya user jab chat start karega, uske liye ek fresh history banayi jaayegi jisme koi purani messages nahi honge.
 
+🧠**Samjho:**
+Har user ke liye ek temporary memory (dictionary) hoti hai — cl.user_session — jismein aap kuch bhi save kar sakte ho: messages, tokens, ID, etc.
+
+Yeh line:
+```python
+cl.user_session = {
+    "history": []
+}
+```
 ---
 
 ## 🔁 Messages ka Format aur Flow
