@@ -26,8 +26,8 @@ openai-agents-guide/
 ### 📘 Full Setup Guide
 > A complete walkthrough of setting up the project, installing dependencies, and writing your first agent.
 
-🔗 [steps to initialize uv, chainlit and agents sdk](docs%2C%20notes%2C%20steps/README.md)
-
+🔗 [Steps to initialize uv, chainlit and agents sdk](docs%2C%20notes%2C%20steps/README.md)
+🔗 [Streaming Chat Completion using run_streamed()](docs%2C%20notes%2C%20steps/STREAMING-CHAT-COMPLETION-USING-RUN_STREAMED().md)
 ---
 
 ### 🧰 Code Snippets & Decorators
