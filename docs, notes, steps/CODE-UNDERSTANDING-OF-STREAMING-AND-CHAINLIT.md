@@ -373,5 +373,9 @@ Toh aap dubara cl.user_session.get("history") se puri updated list nikaal sakte 
 
 
 
-🔧 Maintained & Documented by: **Jawaid Ali**  
-🗓️ Date: July 2025
+---
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?color=6A5ACD&center=true&vCenter=true&lines=Documented+by+Jawaid+Ali;Thanks+for+Reading!" />
+</p>
+
