@@ -62,6 +62,7 @@ cl.user_session.set("history", history)
 ## 💬 AI ko Kaise Samajh aata hai? and Kaise Use Hoti Hai history?
 
 AI ko poori history di jaati hai jab hum `Runner.run(...)` karte hain:
+
 Jab aap agent ko call karte ho using Runner.run(...), toh aap input=history pass karte ho:
 
 ```python
@@ -73,13 +74,11 @@ result = await Runner.run(
 ```
 
 AI last user message ko read karta hai, lekin pehle ke context se bhi samajh leta hai ke baat kaise chal rahi hai.
+
 Yani:
-
-AI agent ko poori history milti hai
-
-Wo samajhta hai ke pehle kya poocha gaya tha
-
-Aur usi context ke base pe next intelligent reply karta hai
+- AI agent ko poori history milti hai
+- Wo samajhta hai ke pehle kya poocha gaya tha
+- Aur usi context ke base pe next intelligent reply karta hai
 
 ---
 
