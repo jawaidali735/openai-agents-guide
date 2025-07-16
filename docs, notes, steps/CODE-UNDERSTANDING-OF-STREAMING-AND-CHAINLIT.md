@@ -373,9 +373,8 @@ Toh aap dubara cl.user_session.get("history") se puri updated list nikaal sakte 
 
 
 
----
 
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=6A5ACD&center=true&vCenter=true&lines=Documented+by+Jawaid+Ali;Thanks+for+Reading!" />
-</p>
+💬 _“Code is like poetry — and every line has its rhythm.”_  
+— **Jawaid Ali**
+
 
