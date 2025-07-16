@@ -28,6 +28,7 @@ openai-agents-guide/
 
 🔗 [Steps to initialize uv, chainlit and agents sdk](docs%2C%20notes%2C%20steps/README.md)
 🔗 [Streaming Chat Completion using run_streamed()](docs%2C%20notes%2C%20steps/STREAMING-CHAT-COMPLETION-USING-RUN_STREAMED().md)
+
 ---
 
 ### 🧰 Code Snippets & Decorators
