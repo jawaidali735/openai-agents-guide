@@ -64,7 +64,6 @@ print(run_func(double, 5))  # Output: 10
 
 ## ✅ 3. `__call__` Method (Magic Method)
 
-### 🔸 Roman Urdu Mein:
 
 Agar aap chahte ho ke **kisi class ka object function ki tarah kaam kare**, to aap usme `__call__()` method define karte ho.
 
@@ -153,4 +152,3 @@ print(cart2.items)  # [] ✅ Alag list
 
 Yeh file aapko Python ke advanced concepts ko easily samajhne mein madad karegi. Har topic ke sath real-life use-case diya gaya hai.
 
-Agar aapko aur concepts add karwane hain (jaise decorators, context managers, etc) to zaroor batayen.
