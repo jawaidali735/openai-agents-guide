@@ -11,7 +11,7 @@ This repository is structured for easy navigation, so you can quickly find what 
 ### 📘 Full Setup Guide
 > A complete walkthrough of setting up the project, installing dependencies, and writing your first agent.
 
-🔗 [Steps to initialize uv, chainlit and agents sdk](docs%2C%20notes%2C%20steps/README.md)
+🔗 [Steps to initialize uv, chainlit and agents sdk](docs%2C%20notes%2C%20steps/Steps-to-initialize-uv-chainlit-and-agents-sdk.md)
 
 🔗 [Streaming Chat Completion using run_streamed()](docs%2C%20notes%2C%20steps/STREAMING-CHAT-COMPLETION-USING-RUN_STREAMED().md)
 
