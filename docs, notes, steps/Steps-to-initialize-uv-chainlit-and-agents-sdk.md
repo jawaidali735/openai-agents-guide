@@ -1,4 +1,3 @@
-
 # 📘 Intro to OpenAI Agents SDK with Chainlit
 
 This guide will walk you through setting up an OpenAI Agents SDK project with Chainlit UI. Ideal for beginners and those exploring agents with interactive chat interfaces.
