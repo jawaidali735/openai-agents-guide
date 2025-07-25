@@ -26,7 +26,15 @@ openai-agents-guide/
 ### 📘 Full Setup Guide
 > A complete walkthrough of setting up the project, installing dependencies, and writing your first agent.
 
-🔗 [Read Full Setup Guide](docs/README.md)
+
+🔗 [Read Full Setup Guide](https://github.com/jawaidali735/openai-agents-guide/blob/main/docs%2C%20notes%2C%20steps/README.md)
+🔗 [CODE UNDERSTANDING OF STREAMING AND CHAINLIT](https://github.com/jawaidali735/openai-agents-guide/blob/main/docs%2C%20notes%2C%20steps/CODE-UNDERSTANDING-OF-STREAMING-AND-CHAINLIT.md)
+🔗 [HOW TO MAKE AGENTS](https://github.com/jawaidali735/openai-agents-guide/blob/main/docs%2C%20notes%2C%20steps/HOW-TO-MAKE-AGENTS.md)
+🔗 [STREAMING CHAT COMPLETION USING run_streamed()](https://github.com/jawaidali735/openai-agents-guide/blob/main/docs%2C%20notes%2C%20steps/STREAMING-CHAT-COMPLETION-USING-RUN_STREAMED%28%29.md)
+🔗 [GENERICS, CALLABLES, and field(default_factory=list)](https://github.com/jawaidali735/openai-agents-guide/blob/main/docs%2C%20notes%2C%20steps/GENARICS%2C%20CALLABLES%2C%20field%28default_factory%3Dlist%29.md)
+
+
+
 
 ---
 
