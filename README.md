@@ -2,7 +2,22 @@
 # 🌟 OpenAI Agents Step-by-Step Project
 
 Welcome to the ultimate **step-by-step guide** for setting up and working with OpenAI Agents SDK and Chainlit!  
-This repository is structured for easy navigation, so you can quickly find what you're looking for — whether you're setting up your first agent or debugging an error or notes.
+This repository is structured for easy navigation, so you can quickly find what you're looking for — whether you're setting up your first agent or debugging an error.
+
+---
+
+## 📂 Project Structure Overview
+
+```bash
+openai-agents-guide/
+├── README.md                  # Main overview and navigation
+├── docs/
+│   └── README.md              # Full detailed setup guide
+├── snippets/
+│   └── README.md              # Decorator and code examples
+├── pdfs/
+│   └── OpenAI_Agents_Notes.pdf # Downloadable PDF notes
+```
 
 ---
 
@@ -11,13 +26,21 @@ This repository is structured for easy navigation, so you can quickly find what 
 ### 📘 Full Setup Guide
 > A complete walkthrough of setting up the project, installing dependencies, and writing your first agent.
 
-🔗 [Steps to initialize uv, chainlit and agents sdk](docs%2C%20notes%2C%20steps/Steps-to-initialize-uv-chainlit-and-agents-sdk.md)
+🔗 [Read Full Setup Guide](docs/README.md)
 
-🔗 [Streaming Chat Completion using run_streamed()](docs%2C%20notes%2C%20steps/STREAMING-CHAT-COMPLETION-USING-RUN_STREAMED().md)
+---
 
-🔗 [How to make agents](docs%2C%20notes%2C%20steps/HOW-TO-MAKE-AGENTS.md)
+### 🧰 Code Snippets & Decorators
+> Quick reference for using Chainlit decorators like `@cl.on_message`, `@cl.on_chat_start`, etc.
 
-🔗 [Code understanding of streaming and chainlit](docs%2C%20notes%2C%20steps/CODE-UNDERSTANDING-OF-STREAMING-AND-CHAINLIT.md)
+🔗 [See Code Examples](snippets/README.md)
+
+---
+
+### 📄 Download Notes as PDF
+> Prefer offline reading? No problem.
+
+📥 [Download PDF Version](pdfs/OpenAI_Agents_Notes.pdf)
 
 ---
 
@@ -30,9 +53,3 @@ This repository is structured for easy navigation, so you can quickly find what 
 
 Happy Learning! 🚀  
 Feel free to fork and contribute!
-
-
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?color=6A5ACD&center=true&vCenter=true&lines=Documented+by+Jawaid+Ali;Thanks+for+Reading!" />
-</p>
-
