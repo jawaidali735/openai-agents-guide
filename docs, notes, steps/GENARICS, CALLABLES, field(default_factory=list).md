@@ -34,11 +34,11 @@ def get_first_item(items: List[T]) -> T:
 
 **🧠 Generic: Type safe hota hai, Any: Wildcard hota hai.**
 
-# Sequence aur Generic Type Hinting - Roman Urdu Main
+## Sequence aur Generic Type Hinting - Roman Urdu Main
 
 Is file mein hum `Sequence`, `Tuple`, `List` aur `Generic` type hinting Python mein kis tarah kaam karti hai wo Roman Urdu mein detail se samjhayenge.
 
-## 🔹 TypeVar aur Generic ka istemal
+### 🔹 TypeVar aur Generic ka istemal
 
 Agar aap function ya class likh rahe hain jo kisi bhi type ke sath kaam kar sakta hai (for example: `int`, `str`, `float`, `list`, `tuple`), tu aap `TypeVar` aur `Generic` ka use karte hain.
 
@@ -60,7 +60,7 @@ print(first_item([1, 2, 3]))           # Output: 1
 print(first_item(("a", "b", "c")))     # Output: "a"
 ```
 
-## 🔹 Sequence kya hota hai?
+### 🔹 Sequence kya hota hai?
 
 Python mein `Sequence` ek abstract type hai jo batata hai ke object indexed aur iterable ho (usmein index se value access ho sakti hai). `list`, `tuple`, `str` sab `Sequence` hain.
 
@@ -80,7 +80,7 @@ def print_items(seq: Sequence[str]) -> None:
 - `{ "apple", "banana" }` (set)
 - `{ "a": 1 }` (dict)
 
-## 🔹 List aur Tuple ka farq
+### 🔹 List aur Tuple ka farq
 
 | Feature        | List                       | Tuple                     |
 |----------------|----------------------------|---------------------------|
@@ -89,10 +89,10 @@ def print_items(seq: Sequence[str]) -> None:
 | Use Case       | Jab change karna ho        | Jab fix items ho          |
 | Performance    | Dheere                    | Thoda fast                |
 
-## 🔹 Kyun `Sequence[str]` mein sirf list aur tuple chalte hain?
+### 🔹 Kyun `Sequence[str]` mein sirf list aur tuple chalte hain?
 Kyun ke `Sequence` sirf wo types accept karta hai jo indexed aur iterable hoti hain. Sets aur dicts unordered hote hain, isliye wo `Sequence` nahi hain.
 
-## Summary
+### Summary
 
 - `Generic` se hum flexible function bana sakte hain.
 - `Sequence` ek abstract type hai jo list, tuple aur string ko represent karta hai.
