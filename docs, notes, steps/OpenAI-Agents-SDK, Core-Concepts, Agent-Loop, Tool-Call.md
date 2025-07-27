@@ -378,7 +378,7 @@ Step	Who initiates	Who executes
 ---
 
 <p align="center">
-  <img src="docs%2C%20notes%2C%20steps/Assets/agent-loop.png" alt="Agent Loop" width="500"/>
+  <img src="/Assets/agent-loop.png" alt="Agent Loop" width="500"/>
 </p>
 
 
