@@ -377,7 +377,10 @@ Step	Who initiates	Who executes
 
 ---
 
-![Agent Loop](./Assets/agent-loop.png)
+<p align="center">
+  <img src="docs%2C%20notes%2C%20steps/Assets/agent-loop.png" alt="Agent Loop" width="500"/>
+</p>
+
 
 ---
 ### ✅ Bonus: Yeh Loop Kab Tak Chalta Hai?
