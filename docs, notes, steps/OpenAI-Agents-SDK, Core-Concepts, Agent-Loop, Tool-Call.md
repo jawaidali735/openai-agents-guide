@@ -375,10 +375,10 @@ Step	Who initiates	Who executes
 - 7	LLM banata hai final reply	🧠 LLM → Agent Loop	LLM kehta hai: “yeh lo final jawab”
 - 8	Agent loop deta hai user ko	📤 Agent Loop → User	Tumhe final result milta hai
 
----
+
 
 <p align="center">
-  <img src="./Assets/agent-loop.png" alt="Agent Loop" width="500"/>
+  <img src="./Assets/agent-loop.png" alt="Agent Loop" width="400"/>
 </p>
 
 
