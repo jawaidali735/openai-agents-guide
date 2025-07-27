@@ -23,6 +23,9 @@ This repository is structured for easy navigation, so you can quickly find what 
 
 🔗 [GENERICS, CALLABLES, and field(default_factory=list)](https://github.com/jawaidali735/openai-agents-guide/blob/main/docs%2C%20notes%2C%20steps/GENARICS%2C%20CALLABLES%2C%20field%28default_factory%3Dlist%29.md)
 
+🔗 [OpenAI Agents SDK – Core Concepts & Tool Call](docs%2C%20notes%2C%20steps/OpenAI-Agents-SDK%2C%20Core-Concepts%2C%20Agent-Loop%2C%20Tool-Call.md)
+
+
 
 
 ## 📎 External Resources

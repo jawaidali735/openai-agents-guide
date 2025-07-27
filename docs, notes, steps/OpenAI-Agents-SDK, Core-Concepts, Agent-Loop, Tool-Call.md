@@ -139,13 +139,12 @@ Stream (realtime response)
 
 
 ---
-
-You said:
-⚙️ **Background mein:** * Har step mein model decide karta hai: **"kya main khud se jawab doon ya kisi tool se poochho?"** * Fir uska result check karke agla action plan karta hai.
-
-agent loop ye tool callin akr rha hota user nae kia puc tu llm kia karta hai agent loop ke pass ata hai requ ya input tu llm kese pass kese 
-
-phele tu ye sumjh ke phele llm hai phir rest api uske bad chat complete aya phir waha se agent loop sdk hai tu process kese horha hota hai
+### Question raised?
+YAgent Loop tool calling kar raha hota hai.
+Agar user ne koi question poocha, to pehle woh LLM ke paas kaise jaata hai?
+Kya pehle LLM hota hai, ya REST API?
+Uske baad Chat Completion aata hai, phir Agent Loop SDK activate hota hai?
+Toh exact process kya hai? Kis order mein ye sab kuch hota hai?
 
 ChatGPT said:
 Bohat zabardast sawal hai! Tum ye samajhna chah rahe ho ke LLM, REST API, Chat Completion, aur Agent Loop ka actual connection kya hai — pehle kya hota hai, baad mein kya, aur data flow kaise hota hai.
@@ -238,8 +237,8 @@ REST API	Web request jahan tum model ko prompt bhej kar jawab lete ho
 
 ---
 
-#### You said:
-ab kia aska matlb ye hai ke user ne input dya wo aay agent loop kese pass usne bheja llm kepass llm ne bola koi tool hai ya nh ye llm ne agent lop se pucha agent loop ne bola hai hai tu ageent loop usko call kaega aur call akre result dega llm ko tu llm dono result ko milke ansar tyar akrega wo dega user kokia isa hi ya nh
+#### sawal ye hai ke:
+Agar user ne koi input diya, toh pehle yeh input Agent Loop ke paas jaata hai. Agent Loop is input ko LLM ko forward karta hai. LLM phir decide karta hai ke kya is input ko solve karne ke liye kisi tool ki zarurat hai ya nahi. Agar tool ki zarurat hoti hai, toh LLM Agent Loop se poochta hai ke kya required tool available hai. Agar tool available hota hai, toh Agent Loop us tool ko call karta hai. Tool ka output wapas Agent Loop ke zariye LLM tak jaata hai. LLM user ke original input aur tool ke result dono ko dekh kar final answer generate karta hai, jo phir user ko diya jaata hai ?
 
 #### ChatGPT said:
 Bohat zabardast! ✅ Tumne almost bilkul sahi samjha hai, bas chhoti si clarification chahiye. Chalo step-by-step clarify karta hoon tumhare flow ko:
@@ -316,17 +315,6 @@ Step	Kaam
 📤 Response	User tak wapis bhej diya jata hai
 
 
----
-#### You said:
-User → Agent Loop → LLM → Tool Call Suggest → Agent Loop → Tool Call → Result → LLM → Final Answer → User
-
-ye arro chalte jate hai jaise ke llm phir tool call yeni llm call kar rha hai tool ko par llm tu sugeet kart hai agent loop ko tu arrro tumne kese dya
-
-
-#### ChatGPT said:
-Bahut hi zabardast observation! 👏 Tumne core cheez pakar li — aur haan, technically arrows ("→") ka matlab hota hai "kis ne kis ko diya", toh jab mein likhta hoon:
-
----
 
 LLM → Tool Call Suggest
 iska matlab hota hai: LLM ne suggest kiya ke koi tool call hona chahiye — actual call LLM nahi karta, balki agent loop karta hai.
@@ -389,7 +377,7 @@ Step	Who initiates	Who executes
 
 ---
 
-![Agent Loop](./assets/agent-loop.png)
+![Agent Loop](./Assets/agent-loop.png)
 
 ---
 ### ✅ Bonus: Yeh Loop Kab Tak Chalta Hai?
@@ -535,3 +523,13 @@ def my_agent():
 - * Tool call results yaad rakhta hai	✅ Yes
 - * LLM ko context deta hai	✅ Yes
 - * Humein manual memory likhni padti	❌ Nahi (unless custom chahiye)
+
+---
+
+<div align="center">
+
+✨ _This journey through intelligent agents was carefully documented by_  
+### **✍️ Jawaid Ali**  
+_Pushing the boundaries of code & cognition_ 🚀
+
+</div>
