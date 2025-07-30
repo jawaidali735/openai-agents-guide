@@ -25,13 +25,13 @@ This repository is structured for easy navigation, so you can quickly find what 
 
 🔗 [OpenAI Agents SDK – Core Concepts & Tool Call](docs%2C%20notes%2C%20steps/OpenAI-Agents-SDK%2C%20Core-Concepts%2C%20Agent-Loop%2C%20Tool-Call.md)
 
-🔗 [AI Agents - Development to Deployment & Introduction to DACA Design Pattern](docs%2C%20notes%2C%20steps/AI%20Agents%20--%20Development%20to%20Deployment%20%26%20Introduction%20to%20DACA%20Design%20Pattern.md)
+🔗 [AI Agents - Development to Deployment & Introduction to DACA Design Pattern](docs%2C%20notes%2C%20steps/AI%20Agents%20--%20Development%20to%20Deployment%20%26%20Introduction%20to%20DACA%20Design%20Pattern.markdown)
 
-🔗 [Google A2A : Agent to Agent Communication & Development, Protoyping, Production using DACA](docs%2C%20notes%2C%20steps/Google%20A2A%20%3A%20Agent%20to%20Agent%20Communication%20%26%20Development%2C%20Prototyping%2C%20Production%20using%20DACA.md)
+🔗 [Google A2A : Agent to Agent Communication & Development, Protoyping, Production using DACA](docs%2C%20notes%2C%20steps/Google%20A2A%20%3A%20Agent%20to%20Agent%20Communication%20%26%20Development%2C%20Prototyping%2C%20Production%20using%20DACA.markdown)
 
-🔗 [Conceptualizing an Email Agent: Our Mind Map Brainstorm](docs%2C%20notes%2C%20steps/Conceptualizing%20an%20Email%20Agent%3A%20Our%20Mind%20Map%20Brainstorm.md)
+🔗 [Conceptualizing an Email Agent: Our Mind Map Brainstorm](docs%2C%20notes%2C%20steps/Conceptualizing%20an%20Email%20Agent%3A%20Our%20Mind%20Map%20Brainstorm.markdown)
 
-🔗 [Unleash AI Agents at Scale Cloud-Native Strategies & Real-World Use Cases Explored](docs%2C%20notes%2C%20steps/Unleash%20AI%20Agents%20at%20Scale%3A%20Cloud-Native%20Strategies%20%26%20Real-World%20Use%20Cases%20Explored.md)
+🔗 [Unleash AI Agents at Scale Cloud-Native Strategies & Real-World Use Cases Explored](docs%2C%20notes%2C%20steps/Unleash%20AI%20Agents%20at%20Scale%3A%20Cloud-Native%20Strategies%20%26%20Real-World%20Use%20Cases%20Explored.markdown)
 
 
 
