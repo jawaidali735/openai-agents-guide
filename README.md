@@ -37,11 +37,11 @@ This repository is structured for easy navigation, so you can quickly find what 
 
 10. [Unleash AI Agents at Scale: Cloud-Native Strategies & Real-World Use Cases Explored](docs%2C%20notes%2C%20steps/Unleash%20AI%20Agents%20at%20Scale%20Cloud-Native%20Strategies%20%26%20Real-World%20Use%20Cases%20Explored.markdown)
 
-11. [AI and Cloud Approaches for Agentic Application : OpenAI Agetns SDK Basics | part 1]()
+11. [AI and Cloud Approaches for Agentic Application : OpenAI Agetns SDK Basics | part 1](https://github.com/jawaidali735/openai-agents-guide/blob/main/docs%2C%20notes%2C%20steps/AI%20and%20Cloud%20Approaches%20for%20Agentic%20Application%20%20OpenAI%20Agetns%20SDK%20Basics%20part%201.markdown)
 
-12. [AI and Cloud Approaches for Agentic Application : OpenAI Agetns SDK Basics | part 2]()
+12. [AI and Cloud Approaches for Agentic Application : OpenAI Agetns SDK Basics | part 2](https://github.com/jawaidali735/openai-agents-guide/blob/main/docs%2C%20notes%2C%20steps/AI%20and%20Cloud%20Approaches%20for%20Agentic%20Application%20%20OpenAI%20Agetns%20SDK%20Basics%20%20part%202.markdown)
 
-13. [Agent level, Global level, Run level]()
+13. [Agent level, Global level, Run level - model config-](https://github.com/jawaidali735/openai-agents-guide/blob/main/docs%2C%20notes%2C%20steps/basics%2C%20agent%20level%2C%20global%20level%2C%20run%20level%20-%20agent%20config.markdown)
 ---
 
 
